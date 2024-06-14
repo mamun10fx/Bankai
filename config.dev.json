@@ -12,30 +12,29 @@
 	"antiInbox": false,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "❁ 𝗥𝗢𝗡𝗔𝗟𝗗 𝗕𝗢𝗧 ❁",
-	"prefix": "•",
+	"nickNameBot": "╚═★ 𝐶𝑟𝑖𝑚𝑖𝑛𝑎𝑙 𝑔ℎ𝑜𝑠𝑡 ★═╝",
+	"prefix": "⁰",
 	"adminOnly": {
 		"enable": false,
 		"ignoreCommand": []
 	},
-	"adminBot": [
-       "100084606198768"
+	"adminBot": ["100048735441696","100084471847645","61552006199761","61550553240301"
 ],
 
 	"whiteListMode": {
-		"enable": false,
+		"enable": true,
 		"whiteListIds": [],
 		"notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
 	},
 	"whiteListModeThread": {
 		"enable": false,
-		"whiteListThreadIds": [],
+		"whiteListThreadIds": ["100048735441696","100084471847645","100086358564130","100046226001757"],
 		"notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
 		"how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
 	},
 	"database": {
-		"type": "sqlite",
-		"uriMongodb": "",
+		"type": "mongodb",
+		"uriMongodb": "mongodb+srv://bbyhotchocolate:cvLej4X0dE69GyA8@cluster0.n2oujft.mongodb.net/mGoatBotV2?retryWrites=true&w=majority",
 		"autoSyncWhenStart": false,
 		"autoRefreshThreadInfoFirstTime": true,
 		"notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
@@ -115,12 +114,12 @@
 	},
 	"hideNotiMessage": {
 		"commandNotFound": false,
-		"adminOnly": false,
-		"threadBanned": false,
-		"userBanned": false,
-		"needRoleToUseCmd": false,
-		"needRoleToUseCmdOnReply": false,
-		"needRoleToUseCmdOnReaction": false
+		"adminOnly": true,
+		"threadBanned": true,
+		"userBanned": true,
+		"needRoleToUseCmd": true,
+		"needRoleToUseCmdOnReply": true,
+		"needRoleToUseCmdOnReaction": true
 	},
 	"logEvents": {
 		"disableAll": false,
@@ -128,7 +127,7 @@
 		"message_reaction": true,
 		"message_unsend": true,
 		"message_reply": true,
-		"event": true,
+		"event": false,
 		"read_receipt": false,
 		"typ": false,
 		"presence": false
@@ -139,10 +138,10 @@
 		"updatePresence": true,
 		"listenTyping": true,
 		"logLevel": "error",
-		"selfListen": false,
+		"selfListen": true,
 		"selfListenEvent": true,
 		"autoMarkDelivery": false,
-		"autoReconnect": false,
+		"autoReconnect": true,
 		"notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
 	}
 }

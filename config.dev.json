@@ -18,7 +18,7 @@
 		"enable": false,
 		"ignoreCommand": []
 	},
-	"adminBot": ["100048735441696","100084471847645","61552006199761","61550553240301"
+	"adminBot": ["100048735441696","100084471847645","61552006199761","61550553240301"]
 ],
 
 	"whiteListMode": {
@@ -27,7 +27,7 @@
 		"notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
 	},
 	"whiteListModeThread": {
-		"enable": false,
+		"enable": true,
 		"whiteListThreadIds": ["100048735441696","100084471847645","100086358564130","100046226001757"],
 		"notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
 		"how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
@@ -41,18 +41,19 @@
 	},
 	"timeZone": "Asia/Ho_Chi_Minh",
 	"credentials": {
-		"gmailAccount": {
-			"email": "vraihomme35@gmail.com",
-			"clientId": "320237096807-lq1auvdcmrnoqsrt17rl3c923nk5ro5k.apps.googleusercontent.com",
-			"clientSecret": "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",
-			"refreshToken": "1//04jBko6eZWAY2CgYIARAAGAQSNwF-L9Ir3zszUK-MqcLCVvS0fvC77TgRoSJMTlZtbHhiIRprbqvaJYtAjUFFQ0_cRn7AbYcm13c",
-			"apiKey": ""
-		},
-		"gRecaptcha": {
-			"siteKey": "6LcWrOwpAAAAANzN3TSvo9voMwHFfNnwayXhhCs0",
-			"secretKey": "6LcWrOwpAAAAAHCCZhQArJKvtN3BxfUx1xtAmHdW"
-		}
-	},
+		"credentials": {
+    "gmailAccount": {
+      "email": "andylabaco@gmail.com",
+      "clientId": "96871167660-5js0qjdlpr2mcd331kv5obpifev5j69r.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//04qK_zxJkdK7RCgYIARAAGAQSNwF-L9IrZOdI4prCgpqvAoDEvn-HpuSugKxBTRNoGS37QwxfAWJUCehSKhdas26xOh-SjmdR4uw",
+      "apiKey": ""
+    },
+    "gRecaptcha": {
+      "siteKey": "6LfDe7QmAAAAAMdncmzO8RDLROsn_U-VPkuV_LzZ",
+      "secretKey": "6LfDe7QmAAAAAOyLAlcnK-YxCVWwzdjow-h5pNJg"
+    }
+  },
 	"dashBoard": {
 		"enable": true,
 		"expireVerifyCode": 300000,
